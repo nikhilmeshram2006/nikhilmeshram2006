@@ -1,0 +1,44 @@
+
+name: Update animated profile art
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-art:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Generate portrait and card
+        run: |
+          python scripts/prep_photo.py
+          python scripts/make_ascii_svg.py
+          python scripts/make_info_card.py
+
+      - name: Fetch contributions and render graph
+        env:
+          GITHUB_USERNAME: nikhilmeshram2006
+        run: |
+          python scripts/fetch_contributions.py
+          python scripts/render_heatmap_svg.py
+
+      - name: Commit generated artwork
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh profile art [skip ci]"
+          file_pattern: "source-prepped.png data/placeholder-portrait.png data/contributions.json avi-ascii.svg info-card.svg contrib-heatmap.svg"
