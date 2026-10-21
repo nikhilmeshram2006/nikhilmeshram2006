@@ -1,1 +1,3 @@
-requests>=2.32.3,<3\nbeautifulsoup4>=4.12.3,<5\nPillow>=10.4,<13\n
+requests>=2.32.3
+beautifulsoup4>=4.12.3
+Pillow>=10.4.0
