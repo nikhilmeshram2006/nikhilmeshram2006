@@ -14,7 +14,7 @@
 
 ## `$ whoami`
 <p align="center">
-  <img src="./avi-ascii.svg" alt="Animated ASCII placeholder portrait" width="370">
+  <img src="./miku%20wallpaper.jpg" alt="Miku wallpaper" width="370">
   <img src="./info-card.svg" alt="Terminal-style developer information card" width="470">
 </p>
 
