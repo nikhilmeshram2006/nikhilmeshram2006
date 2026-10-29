@@ -32,6 +32,3 @@ STATUS     Learning by building
 - Learning modern web development.
 
 ---
-<sub>Generated with Python · SVG artwork · GitHub Actions</sub>
-
-**Note:** The portrait is a placeholder until you replace it with your own photo. The initial contribution graph uses placeholder data; run the workflow to fetch public contribution data.
