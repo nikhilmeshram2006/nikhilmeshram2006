@@ -26,7 +26,9 @@ def compute_streaks(records: dict[str, int]):
         return 0, None, None, 0, None, None, 0, None, None
 
     all_dates = sorted(date.fromisoformat(d) for d in records.keys())
-    first_day, last_day = all_dates[0], all_dates[-1]
+    active_dates = [d for d in all_dates if records.get(d.isoformat(), 0) > 0]
+    first_day = active_dates[0] if active_dates else all_dates[0]
+    last_day = all_dates[-1]
     total = sum(records.values())
 
     # Longest streak across the full period
@@ -83,7 +85,7 @@ def main():
         best_end,
     ) = compute_streaks(records)
 
-    total_range = fmt_range(first_day, last_day)
+    total_range = f"{first_day.strftime('%b %d, %Y').replace(' 0', ' ')} - Present" if first_day else "No contributions yet"
     cur_range = fmt_range(cur_start, cur_end)
     best_range = fmt_range(best_start, best_end)
 
