@@ -36,9 +36,10 @@ jobs:
         run: |
           python scripts/fetch_contributions.py
           python scripts/render_heatmap_svg.py
+          python scripts/render_streak_svg.py
 
       - name: Commit generated artwork
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh profile art [skip ci]"
-          file_pattern: "source-prepped.png data/placeholder-portrait.png data/contributions.json avi-ascii.svg info-card.svg contrib-heatmap.svg"
+          file_pattern: "source-prepped.png data/placeholder-portrait.png data/contributions.json avi-ascii.svg info-card.svg contrib-heatmap.svg streak-card.svg"

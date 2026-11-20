@@ -14,6 +14,9 @@
 <p align="center">
   <img src="./contrib-heatmap.svg" alt="GitHub contribution heatmap" width="860">
 </p>
+<p align="center">
+  <img src="./streak-card.svg" alt="GitHub contribution streak" width="860">
+</p>
 
 ## whoami
 <p align="center">
