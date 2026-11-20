@@ -14,11 +14,11 @@
       .ring { stroke-dasharray: 226.2; stroke-dashoffset: 226.2; animation: drawRing 1.1s ease-out 0.2s forwards; }
       .pulse { animation: pulseDot 2.2s ease-in-out infinite; transform-origin: 430px 92px; }
       @keyframes fadeIn { to { opacity: 1; } }
-      @keyframes drawRing { to { stroke-dashoffset: 226.2; } }
+      @keyframes drawRing { to { stroke-dashoffset: 0.0; } }
       @keyframes pulseDot { 0%, 100% { opacity: 0.85; } 50% { opacity: 1; } }
       @media (prefers-reduced-motion: reduce) {
         .fade { opacity: 1; animation: none; }
-        .ring { stroke-dashoffset: 226.2; animation: none; }
+        .ring { stroke-dashoffset: 0.0; animation: none; }
         .pulse { animation: none; }
       }
     </style>
@@ -43,7 +43,7 @@
 
   <!-- Left Column: Total Contributions -->
   <g class="fade d1" text-anchor="middle">
-    <text x="143" y="128" fill="#e6edf3" class="mono" font-size="34" font-weight="700">190</text>
+    <text x="143" y="128" fill="#e6edf3" class="mono" font-size="34" font-weight="700">191</text>
     <text x="143" y="154" fill="#7ee787" class="mono" font-size="12" font-weight="700" letter-spacing="0.8">TOTAL CONTRIBUTIONS</text>
     <text x="143" y="176" fill="#8b949e" class="mono" font-size="11">Jan 9, 2026 - Present</text>
   </g>
@@ -55,9 +55,9 @@
     <!-- Subtle flame icon at top of ring -->
     <circle cx="430" cy="82" r="9" fill="#0b0d10"/>
     <path class="pulse" d="M430 75.5c1.8 2.4 3.5 4.2 3.5 6.4a3.5 3.5 0 1 1-7 0c0-1.4.7-2.8 1.6-3.9.2 1.1.9 1.6 1.4 1.6.1-1.4-.1-2.8.5-4.1Z" fill="#7ee787"/>
-    <text x="430" y="127" fill="#e6edf3" class="mono" font-size="28" font-weight="700">0</text>
+    <text x="430" y="127" fill="#e6edf3" class="mono" font-size="28" font-weight="700">32</text>
     <text x="430" y="172" fill="#7ee787" class="mono" font-size="12" font-weight="700" letter-spacing="0.8">CURRENT STREAK (DAYS)</text>
-    <text x="430" y="191" fill="#8b949e" class="mono" font-size="11">No active streak</text>
+    <text x="430" y="191" fill="#8b949e" class="mono" font-size="11">Oct 21 - Nov 21, 2026</text>
   </g>
 
   <!-- Right Column: Longest Streak -->

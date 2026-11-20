@@ -65,7 +65,8 @@ def main():
         except Exception:
             pass
 
-    rows = sorted(all_days.values(), key=lambda r: r["date"])
+    today_iso = date.today().isoformat()
+    rows = sorted((r for r in all_days.values() if r["date"] <= today_iso), key=lambda r: r["date"])
     if not rows:
         raise SystemExit("Could not parse GitHub contribution cells.")
 
