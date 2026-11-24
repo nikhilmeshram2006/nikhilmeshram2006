@@ -43,7 +43,7 @@
 
   <!-- Left Column: Total Contributions -->
   <g class="fade d1" text-anchor="middle">
-    <text x="143" y="128" fill="#e6edf3" class="mono" font-size="34" font-weight="700">204</text>
+    <text x="143" y="128" fill="#e6edf3" class="mono" font-size="34" font-weight="700">216</text>
     <text x="143" y="154" fill="#7ee787" class="mono" font-size="12" font-weight="700" letter-spacing="0.8">TOTAL CONTRIBUTIONS</text>
     <text x="143" y="176" fill="#8b949e" class="mono" font-size="11">Jan 9, 2026 - Present</text>
   </g>
@@ -55,16 +55,16 @@
     <!-- Subtle flame icon at top of ring -->
     <circle cx="430" cy="82" r="9" fill="#0b0d10"/>
     <path class="pulse" d="M430 75.5c1.8 2.4 3.5 4.2 3.5 6.4a3.5 3.5 0 1 1-7 0c0-1.4.7-2.8 1.6-3.9.2 1.1.9 1.6 1.4 1.6.1-1.4-.1-2.8.5-4.1Z" fill="#7ee787"/>
-    <text x="430" y="127" fill="#e6edf3" class="mono" font-size="28" font-weight="700">33</text>
+    <text x="430" y="127" fill="#e6edf3" class="mono" font-size="28" font-weight="700">35</text>
     <text x="430" y="172" fill="#7ee787" class="mono" font-size="12" font-weight="700" letter-spacing="0.8">CURRENT STREAK (DAYS)</text>
-    <text x="430" y="191" fill="#8b949e" class="mono" font-size="11">Oct 21 - Nov 22, 2026</text>
+    <text x="430" y="191" fill="#8b949e" class="mono" font-size="11">Oct 21 - Nov 24, 2026</text>
   </g>
 
   <!-- Right Column: Longest Streak -->
   <g class="fade d3" text-anchor="middle">
-    <text x="717" y="128" fill="#e6edf3" class="mono" font-size="34" font-weight="700">33</text>
+    <text x="717" y="128" fill="#e6edf3" class="mono" font-size="34" font-weight="700">35</text>
     <text x="717" y="154" fill="#7ee787" class="mono" font-size="12" font-weight="700" letter-spacing="0.8">LONGEST STREAK (DAYS)</text>
-    <text x="717" y="176" fill="#8b949e" class="mono" font-size="11">Oct 21 - Nov 22, 2026</text>
+    <text x="717" y="176" fill="#8b949e" class="mono" font-size="11">Oct 21 - Nov 24, 2026</text>
   </g>
 
   <!-- Footer -->
